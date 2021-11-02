@@ -1,0 +1,4 @@
+# Allow crawling of all content
+User-Agent: *
+Allow: /
+Sitemap: http://autoprokat.uz/sitemap.xml

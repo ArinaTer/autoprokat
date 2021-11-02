@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{QUERY_STRING} !lang=(en|ru)
+RewriteRule ^(en|ru)$  $1/ [R=301,L]
+RewriteRule ^(en|ru)/(.*)$  $2?lang=$1&%{query_STRING} [L]
